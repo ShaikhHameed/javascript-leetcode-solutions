@@ -3,5 +3,5 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    
+    return 1
 };

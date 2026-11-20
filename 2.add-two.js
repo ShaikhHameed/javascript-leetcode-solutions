@@ -11,8 +11,7 @@
  * @return {ListNode}
  */
 
-
-// CARRY FORWARD METHOD 
+// CARRY BASED METHOD 
 var addTwoNumbers = function(l1, l2) {
     // create a new List
     const MyLL = new ListNode(0); 
@@ -36,5 +35,4 @@ var addTwoNumbers = function(l1, l2) {
     }
 
     return MyLL.next; // return first current Node as HEAD
-    
 };
