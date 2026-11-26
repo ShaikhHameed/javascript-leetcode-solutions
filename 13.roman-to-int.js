@@ -14,15 +14,14 @@ const rMap = {
 } // creating a Map 
 
 var romanToInt = function (s) {
-    let total = 0;
-    for (let i = 0; i < s.length; i++) {
-        let current = rMap[s[i]]; // get current number from Map.
-        let next = rMap[s[i + 1]]; // get number from next Letter 
-        if (current < next) {
-            total -= current; // If current is less than next number, substract it.
-        }
-        else {
-            total += current;
+    let total =0;
+    for(let i=0; i<s.length; i++){
+        let current = rMap[s[i]];
+        let next = rMap[s[i+1]];
+        if(current<next){
+            total-=current;
+        }else{
+            total+=current;
         }
     }
     return total;
